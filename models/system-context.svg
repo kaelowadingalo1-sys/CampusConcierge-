@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Campus Concierge system context</title>
+  <desc id="desc">A boundary diagram showing students, app administrators, university identity service and residence administration outside Campus Concierge, with labelled information flows.</desc>
+  <style>
+    text { font-family:Arial,sans-serif; fill:#172033; } .title { font-size:28px; font-weight:700; } .label { font-size:22px; font-weight:700; } .small { font-size:17px; }
+    .external { fill:#e9eff8; stroke:#28527a; stroke-width:2.5; } .system { fill:#e5f3df; stroke:#3a7d44; stroke-width:4; } .boundary { fill:none; stroke:#3a7d44; stroke-width:3; stroke-dasharray:10 7; }
+    .flow { fill:none; stroke:#4b5563; stroke-width:2.5; marker-end:url(#arrow); } .back { fill:none; stroke:#4b5563; stroke-width:2.5; marker-end:url(#arrow); }
+  </style>
+  <defs><marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="4" orient="auto"><path d="M0,0 L0,8 L10,4 z" fill="#4b5563"/></marker></defs>
+  <text x="700" y="50" text-anchor="middle" class="title">Campus Concierge - System Context</text>
+  <rect x="370" y="120" width="660" height="550" rx="24" class="boundary"/><text x="400" y="155" class="small">System boundary</text>
+  <rect x="480" y="290" width="440" height="210" rx="20" class="system"/>
+  <text x="700" y="365" text-anchor="middle" class="label">Campus Concierge</text>
+  <text x="700" y="402" text-anchor="middle" class="small">post, assign, confirm, track, dispute</text>
+  <text x="700" y="430" text-anchor="middle" class="small">record standard price and agreed terms</text>
+  <rect x="55" y="185" width="230" height="105" rx="15" class="external"/><text x="170" y="230" text-anchor="middle" class="label">Requester</text><text x="170" y="258" text-anchor="middle" class="small">student</text>
+  <rect x="55" y="480" width="230" height="105" rx="15" class="external"/><text x="170" y="525" text-anchor="middle" class="label">Helper</text><text x="170" y="553" text-anchor="middle" class="small">vetted student</text>
+  <rect x="1115" y="185" width="230" height="105" rx="15" class="external"/><text x="1230" y="230" text-anchor="middle" class="label">App admin</text><text x="1230" y="258" text-anchor="middle" class="small">vetting and categories</text>
+  <rect x="1115" y="480" width="230" height="105" rx="15" class="external"/><text x="1230" y="525" text-anchor="middle" class="label">University identity</text><text x="1230" y="553" text-anchor="middle" class="small">existing login service</text>
+  <rect x="585" y="710" width="230" height="80" rx="15" class="external"/><text x="700" y="747" text-anchor="middle" class="label">Residence admin</text><text x="700" y="772" text-anchor="middle" class="small">handoff guidance</text>
+  <path d="M285 230 H480" class="flow"/><text x="382" y="208" text-anchor="middle" class="small">errand details, deadline</text>
+  <path d="M480 263 H285" class="back"/><text x="382" y="286" text-anchor="middle" class="small">assignment, status, deal record</text>
+  <path d="M285 530 H480" class="flow"/><text x="382" y="508" text-anchor="middle" class="small">availability, accept/decline</text>
+  <path d="M480 563 H285" class="back"/><text x="382" y="586" text-anchor="middle" class="small">assigned errand, terms, status</text>
+  <path d="M920 230 H1115" class="flow"/><text x="1018" y="208" text-anchor="middle" class="small">helper approvals, categories</text>
+  <path d="M1115 263 H920" class="back"/><text x="1018" y="286" text-anchor="middle" class="small">backlog, dispute records</text>
+  <path d="M920 530 H1115" class="flow"/><text x="1018" y="508" text-anchor="middle" class="small">authentication request</text>
+  <path d="M1115 563 H920" class="back"/><text x="1018" y="586" text-anchor="middle" class="small">authenticated identity</text>
+  <path d="M700 670 V710" class="flow"/><text x="770" y="700" class="small">handoff guidance</text>
+</svg>
