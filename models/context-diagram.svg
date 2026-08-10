@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Campus Concierge context diagram</title>
+  <desc id="desc">Students access Campus Concierge, which routes requests to University service owners and uses approved knowledge articles.</desc>
+  <style>
+    .actor { fill:#e8eef5; stroke:#1f4d78; stroke-width:2; }
+    .system { fill:#d9ead3; stroke:#38761d; stroke-width:3; }
+    .store { fill:#fff2cc; stroke:#bf9000; stroke-width:2; }
+    text { font-family:Arial,sans-serif; fill:#1f2937; }
+    .label { font-size:24px; font-weight:700; } .small { font-size:18px; }
+    .arrow { stroke:#4b5563; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/></marker></defs>
+  <rect x="70" y="275" width="230" height="120" rx="16" class="actor"/><text x="185" y="325" text-anchor="middle" class="label">Students</text><text x="185" y="355" text-anchor="middle" class="small">search, submit, track</text>
+  <rect x="420" y="220" width="360" height="230" rx="22" class="system"/><text x="600" y="300" text-anchor="middle" class="label">Campus Concierge</text><text x="600" y="334" text-anchor="middle" class="small">guidance, request capture, triage, status</text>
+  <rect x="900" y="275" width="230" height="120" rx="16" class="actor"/><text x="1015" y="325" text-anchor="middle" class="label">Service owners</text><text x="1015" y="355" text-anchor="middle" class="small">resolve and update requests</text>
+  <rect x="470" y="560" width="260" height="90" rx="12" class="store"/><text x="600" y="608" text-anchor="middle" class="label">Knowledge articles</text>
+  <path d="M300 335 H420" class="arrow"/><text x="360" y="315" text-anchor="middle" class="small">enquiry / request</text>
+  <path d="M780 335 H900" class="arrow"/><text x="840" y="315" text-anchor="middle" class="small">routed request</text>
+  <path d="M900 370 H780" class="arrow"/><text x="840" y="400" text-anchor="middle" class="small">status / resolution</text>
+  <path d="M600 560 V450" class="arrow"/><text x="670" y="515" class="small">approved guidance</text>
+</svg>
