@@ -3,11 +3,16 @@
 | Check | Expected result | Result | Reviewer / date |
 |---|---|---|---|
 | Fresh clone | Repository opens with no missing tracked artefacts. | Pending | |
-| Starting point | `README.md` links to each required Lab 01 artefact. | Pending | |
-| Editable model | `models/context-diagram.svg` opens and can be edited in a vector or diagram tool. | Pending | |
-| Exported model | SVG and PDF exports open and match the editable model. | Pending | |
-| Candidate problem | Problem, users and constraints are understandable. | Pending | |
-| Design record | Evidence, decision, consequence, risk and next action are present. | Pending | |
+| Starting point | `README.md` links to each required artefact for both labs. | Pending | |
+| Level 0 context diagram | `models/context/level-0-context.drawio` opens and can be edited in draw.io. | Pending | |
+| State diagram | `models/state/errand-lifecycle.drawio` opens and can be edited in draw.io. | Pending | |
+| Use-case diagram | `models/use-cases/campus-concierge-use-cases.drawio` opens and can be edited in draw.io. | Pending | |
+| Problem and scope | `docs/problem-and-scope.md` is understandable: problem, users, in/out scope, assumptions, constraints. | Pending | |
+| Stakeholders | `docs/stakeholders.md` lists at least four stakeholders with need, concern and evidence/access. | Pending | |
+| Design records | Each file in `design-record/` states evidence, decision, consequence and next uncertainty. | Pending | |
+| Lecturer feedback response | `docs/lecturer-feedback.md` maps each of R1-R6 to the design-record file that addresses it. | Pending | |
+| Controlled scenarios | Each file in `prototype/scenarios/` states initial state and expected result; `tests/matching-scenario-results.md` reflects the same six scenarios. | Pending | |
+| Proposal form | `docs/project-proposal-and-approval.docx` opens and matches the content in `docs/problem-and-scope.md` and `docs/stakeholders.md`. | Pending | |
 
 ## Reviewer notes
 

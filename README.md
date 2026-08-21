@@ -1,17 +1,37 @@
 # Campus Concierge
 
-CSI473 Laboratory 1 workspace for launching a reproducible University Service Hub project.
+CSI473 Software Design workspace for Campus Concierge: a campus errand-finding platform where students post an errand, get automatically matched with a vetted, registered helper, and keep a traceable record of the agreed deal.
 
 ## Start here
 
 - [Contribution agreement](CONTRIBUTING.md)
-- [Candidate project problem](design-record/candidate-problem.md)
-- [Glossary](glossary/glossary.md)
-- [First design record](design-record/2026-08-10-lab-01.md)
-- [Editable context model](models/context-diagram.svg)
-- [Context-model PDF export](models/context-diagram.pdf)
+- [Problem statement and scope](docs/problem-and-scope.md)
+- [Stakeholders](docs/stakeholders.md)
+- [Glossary](glossary.md)
+- [Functional requirements](docs/functional-requirements.md)
+- [Business rules summary](docs/business-rules-summary.md)
+- [Design records](design-record/)
+- [Lecturer feedback reference](docs/lecturer-feedback.md)
+
+## Models
+
+- [Level 0 system context diagram](models/context/level-0-context.drawio)
+- [State diagram](models/state/errand-lifecycle.drawio)
+- [Use-case diagram](models/use-cases/campus-concierge-use-cases.drawio)
+- [Post Errand Request scenario](models/use-cases/post-errand-request-scenario.md)
+- [Quality scenario: helper timeout](docs/quality-scenario-helper-timeout.md)
+
+## Prototype and evaluation
+
+- [Controlled matching scenarios](prototype/scenarios/)
+- [Matching scenario evaluation results](tests/matching-scenario-results.md)
 - [Reproducibility check](evidence/reproducibility-check.md)
-- [Lab hand-in document](submissions/CSI473-Lab-01-Hand-in.docx)
+
+## Submissions
+
+- [Project Problem Proposal and Approval Form](docs/project-proposal-and-approval.docx)
+- [Lab 1 hand-in](submissions/Lab-01-Hand-in.docx)
+- [Lab 2 hand-in](submissions/Lab-02-Hand-in.docx)
 
 ## Working conventions
 
