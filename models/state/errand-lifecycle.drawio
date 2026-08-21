@@ -1,0 +1,76 @@
+<mxfile host="Electron" agent="Claude">
+  <diagram id="campus-concierge-lifecycle" name="Errand Lifecycle">
+    <mxGraphModel dx="938" dy="665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;fontColor=#1F4E5F;align=center;" value="Campus Concierge: Errand Lifecycle" vertex="1">
+          <mxGeometry height="30" width="440" x="280" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="posted" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3F3;strokeColor=#1F4E5F;strokeWidth=2;fontStyle=1;fontColor=#1F4E5F;" value="POSTED" vertex="1">
+          <mxGeometry height="55" width="200" x="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="awaiting" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3F3;strokeColor=#1F4E5F;strokeWidth=2;fontStyle=1;fontColor=#1F4E5F;" value="AWAITING_ACCEPTANCE" vertex="1">
+          <mxGeometry height="55" width="260" x="370" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="accepted" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3F3;strokeColor=#1F4E5F;strokeWidth=2;fontStyle=1;fontColor=#1F4E5F;" value="ACCEPTED" vertex="1">
+          <mxGeometry height="55" width="200" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="inprogress" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3F3;strokeColor=#1F4E5F;strokeWidth=2;fontStyle=1;fontColor=#1F4E5F;" value="IN_PROGRESS" vertex="1">
+          <mxGeometry height="55" width="200" x="400" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="completed" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3F3;strokeColor=#1F4E5F;strokeWidth=2;fontStyle=1;fontColor=#1F4E5F;" value="COMPLETED" vertex="1">
+          <mxGeometry height="55" width="200" x="400" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="closed" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEEDC;strokeColor=#2E7D32;strokeWidth=2;fontStyle=1;fontColor=#2E7D32;" value="CLOSED" vertex="1">
+          <mxGeometry height="55" width="200" x="400" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="reassign" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBEAEA;strokeColor=#A33;strokeWidth=1.8;fontStyle=1;fontColor=#A33;" value="REASSIGN" vertex="1">
+          <mxGeometry height="55" width="180" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cancelled" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBEAEA;strokeColor=#A33;strokeWidth=1.8;fontStyle=1;fontColor=#A33;" value="CANCELLED" vertex="1">
+          <mxGeometry height="55" width="180" x="780" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="disputed1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBEAEA;strokeColor=#A33;strokeWidth=1.8;fontStyle=1;fontColor=#A33;fontSize=11;" value="DISPUTED&#xa;(from ACCEPTED / IN_PROGRESS)" vertex="1">
+          <mxGeometry height="55" width="180" x="780" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="disputed2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBEAEA;strokeColor=#A33;strokeWidth=1.8;fontStyle=1;fontColor=#A33;fontSize=11;" value="DISPUTED&#xa;(from COMPLETED)" vertex="1">
+          <mxGeometry height="55" width="180" x="780" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" edge="1" parent="1" source="posted" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=1.8;" target="awaiting">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" edge="1" parent="1" source="awaiting" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=1.8;" target="accepted">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" edge="1" parent="1" source="accepted" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=1.8;" target="inprogress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" edge="1" parent="1" source="inprogress" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=1.8;" target="completed">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" edge="1" parent="1" source="completed" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=1.8;" target="closed">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="awaiting" style="edgeStyle=none;html=1;endArrow=block;strokeColor=#A33;fontColor=#A33;fontSize=11;" target="reassign" value="decline / timeout">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="reassign" style="edgeStyle=none;html=1;endArrow=block;strokeColor=#A33;fontColor=#A33;fontSize=10;dashed=1;" target="posted" value="re-enters POSTED">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="awaiting" style="edgeStyle=none;html=1;endArrow=block;strokeColor=#A33;fontColor=#A33;fontSize=11;" target="cancelled" value="requester cancels">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="accepted" style="edgeStyle=none;html=1;endArrow=block;strokeColor=#A33;fontColor=#A33;fontSize=11;" target="disputed1" value="cancel (with reason) / dispute">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="inprogress" style="edgeStyle=none;html=1;endArrow=block;strokeColor=#A33;fontColor=#A33;fontSize=11;" target="disputed1" value="dispute opened">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="completed" style="edgeStyle=none;html=1;endArrow=block;strokeColor=#A33;fontColor=#A33;fontSize=11;" target="disputed2" value="dispute opened">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
