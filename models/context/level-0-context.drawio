@@ -1,71 +1,98 @@
-<mxfile host="Electron" agent="Claude">
-  <diagram id="campus-concierge-level0" name="Level 0 Context">
-    <mxGraphModel dx="664" dy="471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+<mxfile host="Electron">
+  <diagram name="Page-1" id="GJJveaB_S3vvQWXKddh1">
+    <mxGraphModel dx="797" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;fontColor=#1F4E5F;align=center;" value="Campus Concierge: Level 0 Context Diagram" vertex="1">
-          <mxGeometry height="30" width="500" x="300" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="process0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EAF3F3;strokeColor=#1F4E5F;strokeWidth=2.5;fontSize=15;fontStyle=1;fontColor=#1F4E5F;" value="0&#xa;Campus Concierge" vertex="1">
-          <mxGeometry height="220" width="220" x="450" y="330" as="geometry" />
-        </mxCell>
-        <mxCell id="requester" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#555555;fontSize=13;fontStyle=1;" value="Requester&#xa;(student needing an errand run)" vertex="1">
-          <mxGeometry height="80" width="220" x="60" y="100" as="geometry" />
-        </mxCell>
-        <mxCell id="helper" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#555555;fontSize=13;fontStyle=1;" value="Helper&#xa;(vetted student registered to help)" vertex="1">
-          <mxGeometry height="80" width="220" x="840" y="100" as="geometry" />
-        </mxCell>
-        <mxCell id="admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#555555;fontSize=13;fontStyle=1;" value="Administrator&#xa;(helper vetting, category pricing)" vertex="1">
-          <mxGeometry height="80" width="220" x="60" y="660" as="geometry" />
-        </mxCell>
-        <mxCell id="identity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#555555;fontSize=13;fontStyle=1;" value="Identity Service&#xa;(university student login)" vertex="1">
-          <mxGeometry height="80" width="220" x="840" y="660" as="geometry" />
-        </mxCell>
-        <mxCell id="notification" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#555555;fontSize=13;fontStyle=1;" value="Notification Service&#xa;(email / SMS delivery channel)" vertex="1">
-          <mxGeometry height="80" width="240" x="440" y="740" as="geometry" />
-        </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="requester" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" target="process0" value="posts errand under category">
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-15" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ozgD2m-FxtjBQo2z6tUu-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" value=",">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="570.7553346835443" y="333.0047137940302" as="sourcePoint" />
-            <mxPoint x="320.0000000000001" y="140" as="targetPoint" />
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-19" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Asignment, terms, contact on confrim" vertex="1">
+          <mxGeometry relative="1" x="0.0092" y="-1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="helper" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" target="process0" value="confirms/declines, updates status">
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-24" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="ozgD2m-FxtjBQo2z6tUu-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" value="assignment, terms, contact on confirm">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="690.0046653164554" y="425.0047137940303" as="sourcePoint" />
-            <mxPoint x="940.76" y="232" as="targetPoint" />
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-25" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Auth request" vertex="1">
+          <mxGeometry relative="1" x="-0.0743" y="-3" as="geometry">
+            <mxPoint x="14" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e5" edge="1" parent="1" source="admin" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" target="process0" value="registers/vets helpers, sets prices">
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-27" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ozgD2m-FxtjBQo2z6tUu-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" value="dispute queue, capacity backlog flag">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="418.4744676228372" y="449.9970215847752" as="sourcePoint" />
-            <mxPoint x="180" y="608.98" as="targetPoint" />
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-28" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Assignment/ status alerts to send" vertex="1">
+          <mxGeometry relative="1" x="-0.107" as="geometry">
+            <mxPoint y="5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e7" edge="1" parent="1" source="process0" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" target="identity" value="authentication request">
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-30" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="ozgD2m-FxtjBQo2z6tUu-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" value="authenticated identity">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1048.4936458745071" y="558.9" as="sourcePoint" />
-            <mxPoint x="809.9998726574775" y="400.0004287712005" as="targetPoint" />
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-31" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Dispute queue, Capacity backlog flag" vertex="1">
+          <mxGeometry relative="1" x="0.2637" as="geometry">
+            <mxPoint x="36" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e9" edge="1" parent="1" source="process0" style="edgeStyle=none;html=1;endArrow=block;fontSize=11;" target="notification" value="assignment / status alerts to send">
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="Campus Concierge" vertex="1">
+          <mxGeometry height="120" width="120" x="380" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-12" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ozgD2m-FxtjBQo2z6tUu-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="footnote" parent="1" style="text;html=1;fontSize=11;fontColor=#777777;align=center;" value="Level 0: one process, external entities only. No database tables or internal components shown." vertex="1">
-          <mxGeometry height="30" width="540" x="280" y="850" as="geometry" />
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-14" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Post errand" vertex="1">
+          <mxGeometry relative="1" x="-0.3563" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Requester" vertex="1">
+          <mxGeometry height="50" width="90" x="130" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Notification Service" vertex="1">
+          <mxGeometry height="50" width="110" x="385" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-29" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ozgD2m-FxtjBQo2z6tUu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-32" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Register helpers, set prices" vertex="1">
+          <mxGeometry relative="1" x="-0.2967" y="-1" as="geometry">
+            <mxPoint x="72" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Admin" vertex="1">
+          <mxGeometry height="50" width="110" x="130" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-20" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ozgD2m-FxtjBQo2z6tUu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-23" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Authenticated identity" vertex="1">
+          <mxGeometry relative="1" x="0.459" y="1" as="geometry">
+            <mxPoint x="32" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Identity Service" vertex="1">
+          <mxGeometry height="50" width="110" x="680" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Helper" vertex="1">
+          <mxGeometry height="50" width="110" x="660" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-13" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.627;entryY=1.067;entryDx=0;entryDy=0;entryPerimeter=0;" target="ozgD2m-FxtjBQo2z6tUu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-33" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Status, match, dispute outcome" vertex="1">
+          <mxGeometry relative="1" x="0.3477" as="geometry">
+            <mxPoint x="47" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-16" edge="1" parent="1" source="ozgD2m-FxtjBQo2z6tUu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1.001;entryY=0.384;entryDx=0;entryDy=0;entryPerimeter=0;" target="ozgD2m-FxtjBQo2z6tUu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ozgD2m-FxtjBQo2z6tUu-18" connectable="0" parent="ozgD2m-FxtjBQo2z6tUu-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Confirm/ declines, update status" vertex="1">
+          <mxGeometry relative="1" x="-0.7399" y="-1" as="geometry">
+            <mxPoint x="6" y="3" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

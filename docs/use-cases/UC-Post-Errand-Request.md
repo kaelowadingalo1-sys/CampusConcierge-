@@ -2,7 +2,7 @@
 
 **Actor:** Requester
 **Precondition:** The requester has a confirmed account (D-007).
-**Success guarantee:** A validated errand exists in POSTED status, tied to an approved category and its current standard price, with the requester able to see its status.
+**Postcondition:** A validated errand exists in POSTED status, tied to an approved category and its current standard price, with the requester able to see its status.
 
 ## Success scenario
 
@@ -29,9 +29,9 @@ A conversation across the system boundary, not a list of interface actions:
 
 Tracing each main-flow step into the design question it raises, before any class or table is named:
 
-- Select category → stable category identity and its associated standard price
-- Retrieve standard price / backlog → source boundary and failure handling if that lookup fails
-- Supply task details and deadline → draft data capture and validation
-- Validate category → policy enforcement and business-rule evidence (BR-01, BR-02)
-- Record errand as POSTED → state and audit trail (see `models/state/errand-lifecycle.*`)
-- Confirm identifier and status → the interface contract returned to the requester
+- Select category: stable category identity and its associated standard price
+- Retrieve standard price / backlog: source boundary and failure handling if that lookup fails
+- Supply task details and deadline: draft data capture and validation
+- Validate category: policy enforcement and business-rule evidence (BR-01, BR-02)
+- Record errand as POSTED: state and audit trail (see `models/state/errand-lifecycle.drawio`)
+- Confirm identifier and status: the interface contract returned to the requester
