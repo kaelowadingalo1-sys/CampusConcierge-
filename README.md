@@ -18,8 +18,9 @@ CSI473 Software Design workspace for Campus Concierge: a campus errand-finding p
 - [Level 0 system context diagram](models/context/level-0-context.drawio)
 - [State diagram](models/state/errand-lifecycle.drawio)
 - [Use-case diagram](models/use-cases/campus-concierge-use-cases.drawio)
-- [Post Errand Request scenario](models/use-cases/post-errand-request-scenario.md)
-- [Quality scenario: helper timeout](docs/quality-scenario-helper-timeout.md)
+- [Post Errand Request use case](docs/use-cases/UC-Post-Errand-Request.md)
+- [Acceptance criteria](docs/acceptance-criteria.md)
+- [Quality scenarios](docs/quality-scenarios.md)
 
 ## Prototype and evaluation
 

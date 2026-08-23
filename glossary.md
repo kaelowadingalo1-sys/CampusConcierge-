@@ -10,5 +10,13 @@
 | Standard price | The non-negotiable price recorded for an errand category; the system records it but does not process payment. |
 | Assignment | The system's allocation of a posted errand to the next available registered helper. |
 | Reassignment | Allocation to another eligible helper after a decline or missed response window. |
-| Dispute | A requester report that an errand was not completed as agreed, supported by the recorded deal. |
+| Backlog | The state of a posted errand with no eligible helper currently available; retried as helpers free up. |
+| Dispute | A requester or helper report that an errand was not completed as agreed, supported by the recorded deal. |
 | App admin | The role that vets helpers, maintains category prices and monitors assignment capacity. |
+| Identity Service | The external entity a real login would depend on; mocked for this semester's prototype (D-007). |
+| Notification Service | The external channel used for signup confirmation and assignment/status/dispute alerts. |
+| Errand status | The lifecycle a single errand moves through: POSTED, AWAITING_ACCEPTANCE, ACCEPTED, IN_PROGRESS, COMPLETED, CLOSED, with exception paths to REASSIGN, CANCELLED or DISPUTED. See `models/state/errand-lifecycle.drawio`. |
+
+## Traceability
+
+Every term above is used as written in `docs/problem-and-scope.md` (the approved problem and scope) and `docs/stakeholders.md` (the five stakeholders: Requester, Helper, App admin, Residence/hall administration, University IT). Where a term maps to a specific design decision, the relevant `design-record/` file is referenced directly in this table rather than repeated here.
