@@ -9,18 +9,21 @@ CSI473 Software Design workspace for Campus Concierge: a campus errand-finding p
 - [Stakeholders](docs/stakeholders.md)
 - [Glossary](glossary.md)
 - [Functional requirements](docs/functional-requirements.md)
-- [Business rules summary](docs/business-rules-summary.md)
+- [Business rules](docs/business-rules.md)
 - [Design records](design-record/)
 - [Lecturer feedback reference](docs/lecturer-feedback.md)
 
 ## Models
 
+- [Domain class model](models/domain-model.drawio)
 - [Level 0 system context diagram](models/context/level-0-context.drawio)
 - [State diagram](models/state/errand-lifecycle.drawio)
 - [Use-case diagram](models/use-cases/campus-concierge-use-cases.drawio)
 - [Post Errand Request use case](docs/use-cases/UC-Post-Errand-Request.md)
 - [Acceptance criteria](docs/acceptance-criteria.md)
 - [Quality scenarios](docs/quality-scenarios.md)
+- [CRC cards](docs/crc-cards.md)
+- [Traceability matrix](docs/traceability-matrix.md)
 
 ## Prototype and evaluation
 
