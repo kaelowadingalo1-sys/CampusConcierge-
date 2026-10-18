@@ -1,0 +1,278 @@
+<mxfile host="Electron">
+  <diagram id="0" name="Page-1">
+    <mxGraphModel dx="1656" dy="906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Sequence: Post and accept an errand" vertex="1">
+          <mxGeometry height="25" width="1100" x="60" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="p_req" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Requester" vertex="1">
+          <mxGeometry height="40" width="160" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p_err" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Errand" vertex="1">
+          <mxGeometry height="40" width="160" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p_cat" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="ErrandCategory" vertex="1">
+          <mxGeometry height="40" width="160" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p_asn" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Assignment" vertex="1">
+          <mxGeometry height="40" width="160" x="640" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p_hlp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Helper" vertex="1">
+          <mxGeometry height="40" width="160" x="840" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p_notif" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" value="Notification Service (supporting)" vertex="1">
+          <mxGeometry height="40" width="160" x="1040" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_req" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#999999;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="80" as="sourcePoint" />
+            <mxPoint x="120" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_err" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#999999;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="80" as="sourcePoint" />
+            <mxPoint x="320" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_cat" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#999999;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="80" as="sourcePoint" />
+            <mxPoint x="520" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_asn" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#999999;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="80" as="sourcePoint" />
+            <mxPoint x="720" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_hlp" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#999999;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="80" as="sourcePoint" />
+            <mxPoint x="920" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_notif" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#999999;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="80" as="sourcePoint" />
+            <mxPoint x="1120" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_err" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1">
+          <mxGeometry height="875" width="10" x="315" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="a_cat" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1">
+          <mxGeometry height="60" width="10" x="515" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="a_asn" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1">
+          <mxGeometry height="620" width="10" x="715" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="a_hlp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1">
+          <mxGeometry height="495" width="10" x="915" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="a_notif" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1">
+          <mxGeometry height="595" width="10" x="1115" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="1: postErrand(categoryId, taskDetails, deadline)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="115" as="sourcePoint" />
+            <mxPoint x="315" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="2: isApproved()&amp;nbsp;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="140" as="sourcePoint" />
+            <mxPoint x="515" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" value="3: approved = true/false, standardPrice">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="165" as="sourcePoint" />
+            <mxPoint x="325" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frame_opt_reject" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;width=60;height=30;align=left;verticalAlign=top;fontStyle=1;" value="opt" vertex="1">
+          <mxGeometry height="80" width="1080" x="60" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="guard_reject" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;" value="[category not approved -&gt; ends here]" vertex="1">
+          <mxGeometry height="20" width="400" x="110" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="om1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="3a: notify(requester, errandRejected)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="215" as="sourcePoint" />
+            <mxPoint x="1115" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="om2" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" value="3b: errandRejected notification">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1115" y="235" as="sourcePoint" />
+            <mxPoint x="120" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sm1" edge="1" parent="1" source="a_err" style="html=1;endArrow=block;endFill=1;rounded=0;fontSize=11;edgeStyle=orthogonalEdgeStyle;innerLoopWaypoints=1;" target="a_err" value="4: lockPrice(standardPrice)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375.06" y="280" />
+              <mxPoint x="375.06" y="300" />
+            </Array>
+            <mxPoint x="325" y="280" as="sourcePoint" />
+            <mxPoint x="385" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frame_alt_helper" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;width=60;height=30;align=left;verticalAlign=top;fontStyle=1;" value="alt" vertex="1">
+          <mxGeometry height="215" width="1080" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="guard_helper1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;" value="[eligible helper found]" vertex="1">
+          <mxGeometry height="20" width="300" x="110" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="5: createAssignment(eligibleHelper)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="350" as="sourcePoint" />
+            <mxPoint x="715" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="6: notify(helper, assignmentOffer)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="370" as="sourcePoint" />
+            <mxPoint x="1115" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" value="7: assignmentOffer notification">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1115" y="390" as="sourcePoint" />
+            <mxPoint x="925" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="divider_helper" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#666666;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="415" as="sourcePoint" />
+            <mxPoint x="1140" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="guard_helper2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;" value="[else] no eligible helper (QS-3 backlog)" vertex="1">
+          <mxGeometry height="20" width="400" x="110" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="sm_backlog" edge="1" parent="1" source="a_err" style="html=1;endArrow=block;endFill=1;rounded=0;fontSize=11;edgeStyle=orthogonalEdgeStyle;innerLoopWaypoints=1;" target="a_err" value="5b: enterBacklog(), status = Backlog">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375.06" y="440" />
+              <mxPoint x="375.06" y="460" />
+            </Array>
+            <mxPoint x="325" y="440" as="sourcePoint" />
+            <mxPoint x="385" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6b" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="6b: notify(admin, capacityFlag) [ends - retries once a helper frees up]">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="480" as="sourcePoint" />
+            <mxPoint x="1115" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frame_alt" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;width=60;height=30;align=left;verticalAlign=top;fontStyle=1;" value="alt" vertex="1">
+          <mxGeometry height="400" width="1080" x="60" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="guard1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;" value="[helper confirms within the acceptance window" vertex="1">
+          <mxGeometry height="20" width="480" x="110" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="8: confirm()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="915" y="605" as="sourcePoint" />
+            <mxPoint x="725" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="9: recordAcceptance(), helperConfirmed = true">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="715" y="630" as="sourcePoint" />
+            <mxPoint x="325" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9b" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="9b: notify(requester, helperAccepted)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="655" as="sourcePoint" />
+            <mxPoint x="1115" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9c" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" value="9c: helperAccepted notification (no contact details yet)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1115" y="675" as="sourcePoint" />
+            <mxPoint x="120" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9d" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="9d: confirm()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="700" as="sourcePoint" />
+            <mxPoint x="315" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sm2" edge="1" parent="1" source="a_err" style="html=1;endArrow=block;endFill=1;rounded=0;fontSize=11;edgeStyle=orthogonalEdgeStyle;innerLoopWaypoints=1;" target="a_err" value="10: lockTerms(), status = Confirmed [requires helperConfirmed AND requesterConfirmed]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="720" />
+              <mxPoint x="380" y="740" />
+            </Array>
+            <mxPoint x="325" y="720" as="sourcePoint" />
+            <mxPoint x="385" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="11: notify(requester, helper, contactDetailsRevealed)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="765" as="sourcePoint" />
+            <mxPoint x="1115" y="765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" value="12: confirmation + contact details (delivered to requester and helper)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1115" y="790" as="sourcePoint" />
+            <mxPoint x="120" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="divider" edge="1" parent="1" style="html=1;dashed=1;strokeColor=#666666;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="815" as="sourcePoint" />
+            <mxPoint x="1140" y="815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="guard2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;" value="[else] helper declines, or the acceptance window expires&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="600" x="110" y="822" as="geometry" />
+        </mxCell>
+        <mxCell id="m13" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="13: decline()  or  acceptance window expires">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="915" y="865" as="sourcePoint" />
+            <mxPoint x="725" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sm3" edge="1" parent="1" source="a_asn" style="html=1;endArrow=block;endFill=1;rounded=0;fontSize=11;edgeStyle=orthogonalEdgeStyle;innerLoopWaypoints=1;" target="a_asn" value="14: recordOutcome(declined | timedOut)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="885" />
+              <mxPoint x="760" y="905" />
+            </Array>
+            <mxPoint x="725" y="885" as="sourcePoint" />
+            <mxPoint x="785" y="905" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m15" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="15: requestReassignment()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="715" y="925" as="sourcePoint" />
+            <mxPoint x="325" y="925" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="16: createAssignment(nextEligibleHelper)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="945" as="sourcePoint" />
+            <mxPoint x="715" y="945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m17" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" value="17: errandStatusUpdate(Confirmed)&amp;nbsp;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="975" as="sourcePoint" />
+            <mxPoint x="120" y="975" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
