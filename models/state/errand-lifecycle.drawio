@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="i850zH3ijZGjcEW0HI87">
-    <mxGraphModel dx="797" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1159" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -168,6 +168,13 @@
           <mxGeometry relative="1" x="55" y="556" as="geometry">
             <mxPoint x="20" y="140" as="sourcePoint" />
             <mxPoint x="50" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8TFmiOUHt4tl_z8QGJjx-1" edge="1" parent="1" source="Isx_J-xKx_mjsUuDidxu-1" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=1.6;strokeColor=#000000;fontSize=11;dashed=1;entryX=0.406;entryY=-0.04;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" target="rrs22BgofdRvL6rWV2AM-1" value="requester cancels[pre-acceptance]">
+          <mxGeometry relative="1" x="0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="580" y="160" as="sourcePoint" />
+            <mxPoint x="710" y="203" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
