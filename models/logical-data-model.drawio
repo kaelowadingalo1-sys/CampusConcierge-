@@ -1,0 +1,119 @@
+<mxfile host="Electron">
+  <diagram id="ldm" name="Logical data model">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Logical data model: Campus Concierge (PK primary key, FK foreign key, UQ unique)" vertex="1">
+          <mxGeometry height="25" width="900" x="150" y="5" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_req" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="requester" vertex="1">
+          <mxGeometry height="98" width="220" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_req_f" parent="t_req" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="requester_id PK&lt;br&gt;student_number UQ&lt;br&gt;name&lt;br&gt;contact_phone" vertex="1">
+          <mxGeometry height="72" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_cat" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="errand_category" vertex="1">
+          <mxGeometry height="98" width="220" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cat_f" parent="t_cat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="category_id PK&lt;br&gt;name UQ&lt;br&gt;approved&lt;br&gt;standard_price" vertex="1">
+          <mxGeometry height="72" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_adm" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="administrator" vertex="1">
+          <mxGeometry height="82" width="220" x="1000" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_adm_f" parent="t_adm" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="administrator_id PK&lt;br&gt;student_number UQ&lt;br&gt;name" vertex="1">
+          <mxGeometry height="56" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_err" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="errand" vertex="1">
+          <mxGeometry height="226" width="220" x="340" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t_err_f" parent="t_err" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="errand_id PK&lt;br&gt;requester_id FK&lt;br&gt;category_id FK&lt;br&gt;task_details&lt;br&gt;deadline&lt;br&gt;price (locked at posting)&lt;br&gt;status&lt;br&gt;backlog&lt;br&gt;request_key&lt;br&gt;request_hash&lt;br&gt;created_at&lt;br&gt;UQ (requester_id, request_key)" vertex="1">
+          <mxGeometry height="200" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_asn" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="assignment" vertex="1">
+          <mxGeometry height="210" width="260" x="680" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t_asn_f" parent="t_asn" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="assignment_id PK&lt;br&gt;errand_id FK&lt;br&gt;helper_id FK&lt;br&gt;assigned_at&lt;br&gt;expires_at&lt;br&gt;outcome (set once)&lt;br&gt;helper_confirmed&lt;br&gt;requester_confirmed&lt;br&gt;is_active&lt;br&gt;UQ (helper_id) where is_active&lt;br&gt;UQ (errand_id) where is_active" vertex="1">
+          <mxGeometry height="184" width="260" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_hlp" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="helper" vertex="1">
+          <mxGeometry height="130" width="220" x="1000" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t_hlp_f" parent="t_hlp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="helper_id PK&lt;br&gt;student_number UQ&lt;br&gt;name&lt;br&gt;contact_phone&lt;br&gt;available&lt;br&gt;vetted_by FK" vertex="1">
+          <mxGeometry height="104" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_con" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="errand_contact" vertex="1">
+          <mxGeometry height="82" width="220" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="t_con_f" parent="t_con" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="errand_id PK, FK&lt;br&gt;meeting_point&lt;br&gt;requester_phone" vertex="1">
+          <mxGeometry height="56" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_evt" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="errand_event (append-only)" vertex="1">
+          <mxGeometry height="162" width="220" x="340" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="t_evt_f" parent="t_evt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="event_id PK&lt;br&gt;errand_id FK&lt;br&gt;event_type&lt;br&gt;from_status&lt;br&gt;to_status&lt;br&gt;actor_type, actor_id&lt;br&gt;occurred_at&lt;br&gt;detail" vertex="1">
+          <mxGeometry height="136" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_dis" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="dispute" vertex="1">
+          <mxGeometry height="162" width="220" x="1000" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="t_dis_f" parent="t_dis" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="dispute_id PK&lt;br&gt;errand_id FK, UQ&lt;br&gt;opened_by&lt;br&gt;reason&lt;br&gt;opened_at&lt;br&gt;resolution&lt;br&gt;resolved_at&lt;br&gt;resolved_by FK" vertex="1">
+          <mxGeometry height="136" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_out" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" value="notification_outbox" vertex="1">
+          <mxGeometry height="178" width="220" x="40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="t_out_f" parent="t_out" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;whiteSpace=wrap;html=1;" value="outbox_id PK&lt;br&gt;errand_id FK&lt;br&gt;recipient_id&lt;br&gt;type&lt;br&gt;payload&lt;br&gt;created_at&lt;br&gt;sent_at&lt;br&gt;attempts&lt;br&gt;cancelled" vertex="1">
+          <mxGeometry height="152" width="220" y="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r1" edge="1" parent="1" source="t_req" target="t_err" style="html=1;endArrow=none;startArrow=none;" value="posts (1 : 0..*)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="t_cat" target="t_err" style="html=1;endArrow=none;startArrow=none;" value="categorises (1 : 0..*)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="t_err" target="t_asn" style="html=1;endArrow=none;startArrow=none;" value="offered through (1 : 0..*)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="t_hlp" target="t_asn" style="html=1;endArrow=none;startArrow=none;" value="receives (1 : 0..*)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="t_adm" target="t_hlp" style="html=1;endArrow=none;startArrow=none;" value="vets (1 : 0..*)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="t_err" target="t_con" style="html=1;endArrow=none;startArrow=none;" value="has (1 : 1)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="t_err" target="t_dis" style="html=1;endArrow=none;startArrow=none;" value="may raise (1 : 0..1)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="1" source="t_adm" target="t_dis" style="html=1;endArrow=none;startArrow=none;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="resolves (1 : 0..*)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1270" y="81" />
+              <mxPoint x="1270" y="581" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="1" source="t_err" target="t_evt" style="html=1;endArrow=none;startArrow=none;" value="records (1 : 1..*)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="1" source="t_err" target="t_out" style="html=1;endArrow=none;startArrow=none;" value="queues (1 : 0..*)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
