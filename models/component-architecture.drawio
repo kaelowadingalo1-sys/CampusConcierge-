@@ -1,0 +1,92 @@
+<mxfile host="Electron">
+  <diagram id="comp" name="Component view">
+    <mxGraphModel dx="1220" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Component view: Campus Concierge (Alternative A, modular application)" vertex="1">
+          <mxGeometry height="25" width="900" x="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ui" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" value="Student web client" vertex="1">
+          <mxGeometry height="40" width="200" x="500" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;align=left;spacingLeft=8;fontStyle=2;" value="Single deployable application" vertex="1">
+          <mxGeometry height="440" width="760" x="240" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="idext" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" value="Identity Service (mock)" vertex="1">
+          <mxGeometry height="40" width="160" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="idport" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;port&amp;gt;&amp;gt; Identity check" vertex="1">
+          <mxGeometry height="40" width="170" x="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" value="Web/API layer" vertex="1">
+          <mxGeometry height="40" width="200" x="500" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Category and Helper Administration&lt;/b&gt;&lt;br&gt;categories, standard prices, helper registry" vertex="1">
+          <mxGeometry height="70" width="200" x="260" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="wf" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Errand Workflow&lt;/b&gt;&lt;br&gt;errands, assignments, matching, expiry scheduler, confirmation gate, event history" vertex="1">
+          <mxGeometry height="70" width="200" x="500" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="disp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Dispute&lt;/b&gt;&lt;br&gt;disputes, administrator resolution" vertex="1">
+          <mxGeometry height="70" width="200" x="740" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="notport" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;port&amp;gt;&amp;gt; Notifier" vertex="1">
+          <mxGeometry height="40" width="150" x="640" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="notext" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" value="Notification Service" vertex="1">
+          <mxGeometry height="40" width="170" x="1040" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Relational database (each module owns its own tables)" vertex="1">
+          <mxGeometry height="40" width="680" x="260" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="ui" style="html=1;endArrow=open;endFill=0;" target="api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="api" style="html=1;endArrow=open;endFill=0;" target="idport">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="idport" style="html=1;endArrow=open;endFill=0;" target="idext">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="api" style="html=1;endArrow=open;endFill=0;edgeStyle=orthogonalEdgeStyle;" target="admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="api" style="html=1;endArrow=open;endFill=0;" target="wf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="api" style="html=1;endArrow=open;endFill=0;edgeStyle=orthogonalEdgeStyle;" target="disp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="wf" style="html=1;endArrow=open;endFill=0;" target="admin" value="category, price, eligible helpers">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="disp" style="html=1;endArrow=open;endFill=0;" target="wf" value="history, set DISPUTED">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="wf" style="html=1;endArrow=open;endFill=0;exitX=0.85;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="notport">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="notport" style="html=1;endArrow=open;endFill=0;" target="notext">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="admin" style="html=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.147;entryY=0;entryDx=0;entryDy=0;" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="wf" style="html=1;endArrow=open;endFill=0;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.41;entryY=0;entryDx=0;entryDy=0;" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="disp" style="html=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.853;entryY=0;entryDx=0;entryDy=0;" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;fontStyle=2;" value="Failure boundary: a failed notification does not roll back workflow changes. The expiry scheduler runs inside Errand Workflow and reads stored expiry times, so it catches up after a restart." vertex="1">
+          <mxGeometry height="40" width="700" x="240" y="550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
