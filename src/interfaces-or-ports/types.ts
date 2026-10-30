@@ -1,8 +1,9 @@
 // Plain data shapes shared by the core and the ports. No behaviour here.
 
+// Names match models/lifecycle-or-activity.drawio.
 export type ErrandStatus =
-  | "POSTED" | "AWAITING_ACCEPTANCE" | "ASSIGNED" | "CONFIRMED"
-  | "COMPLETED" | "CANCELLED" | "DISPUTED";
+  | "POSTED" | "AWAITING_ACCEPTANCE" | "ACCEPTED" | "IN_PROGRESS"
+  | "COMPLETED" | "CANCELLED" | "DISPUTED" | "CLOSED";
 
 export type AssignmentOutcome = "accepted" | "declined" | "timed_out";
 
