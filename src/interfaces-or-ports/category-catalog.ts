@@ -1,6 +1,6 @@
 // Implemented by Category and Helper Administration.
 // The workflow never reads those tables directly (ADR-001).
 export interface CategoryCatalog {
-  isApproved(categoryId: number): Promise<boolean>;
-  standardPrice(categoryId: number): Promise<number>;
+  // Null when the category does not exist or is not approved (BR-D1).
+  approvedCategoryPrice(categoryId: number): Promise<number | null>;
 }

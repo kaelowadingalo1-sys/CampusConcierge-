@@ -1,5 +1,5 @@
 // Implemented by Category and Helper Administration.
 export interface HelperDirectory {
-  // Helpers who may be offered an errand now, in the order they should be tried.
-  eligibleHelpers(categoryId: number): Promise<number[]>;
+  // Ids of helpers who are registered and marked available, in a fixed order.
+  availableHelpers(): Promise<number[]>;
 }
