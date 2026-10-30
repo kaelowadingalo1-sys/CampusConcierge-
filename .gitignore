@@ -1,2 +1,5 @@
-.$*.drawio.bkp 
-*.lock
+node_modules/
+dist/
+*.log
+.env 
+*.bkp
